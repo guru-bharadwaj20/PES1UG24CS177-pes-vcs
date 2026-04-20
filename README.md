@@ -54,18 +54,18 @@ Supported CLI operations in PES-VCS:
 
 The following screenshots are available in the Screenshots directory and mapped to their corresponding validation steps.
 
-| Screenshot Path | Description |
+| Screenshot | Description |
 | --- | --- |
-| Screenshots/Phase1_ObjectStorage_TestOutput.png | Phase 1 object storage test output showing successful blob write/read and integrity checks. |
-| Screenshots/Phase2_Tree_TestOutput.png | Phase 2 tree test output verifying tree serialization and parsing correctness. |
-| Screenshots/Phase2_ObjectBinary_View.png | Hex dump view of a stored tree object demonstrating raw object layout. |
-| Screenshots/Phase3_Index_Status_and_File.png | Phase 3 staging demonstration showing init, add, status, and index file contents. |
-| Screenshots/Phase4_Commit_Log.png | Commit log output showing commit metadata and history traversal. |
-| Screenshots/Phase4_ObjectGrowth_and_Refs.png | Object store growth and reference files after multiple commits. |
-| Screenshots/Integration_Test_Start.png | Integration test setup/start state before sequence execution. |
-| Screenshots/Integration_FirstCommit.png | Integration sequence output at first successful commit checkpoint. |
-| Screenshots/Integration_FullHistory.png | Integration sequence output demonstrating complete commit history flow. |
-| Screenshots/Integration_ObjectStore_and_Refs.png | Final integration state showing object files and HEAD/branch references. |
+| ![Phase 1 Object Storage Test Output](Screenshots/Phase1_ObjectStorage_TestOutput.png) | Phase 1 object storage test output showing successful blob write/read and integrity checks. |
+| ![Phase 2 Tree Test Output](Screenshots/Phase2_Tree_TestOutput.png) | Phase 2 tree test output verifying tree serialization and parsing correctness. |
+| ![Phase 2 Object Binary View](Screenshots/Phase2_ObjectBinary_View.png) | Hex dump view of a stored tree object demonstrating raw object layout. |
+| ![Phase 3 Index Status and File](Screenshots/Phase3_Index_Status_and_File.png) | Phase 3 staging demonstration showing init, add, status, and index file contents. |
+| ![Phase 4 Commit Log](Screenshots/Phase4_Commit_Log.png) | Commit log output showing commit metadata and history traversal. |
+| ![Phase 4 Object Growth and Refs](Screenshots/Phase4_ObjectGrowth_and_Refs.png) | Object store growth and reference files after multiple commits. |
+| ![Integration Test Start](Screenshots/Integration_Test_Start.png) | Integration test setup/start state before sequence execution. |
+| ![Integration First Commit](Screenshots/Integration_FirstCommit.png) | Integration sequence output at first successful commit checkpoint. |
+| ![Integration Full History](Screenshots/Integration_FullHistory.png) | Integration sequence output demonstrating complete commit history flow. |
+| ![Integration Object Store and Refs](Screenshots/Integration_ObjectStore_and_Refs.png) | Final integration state showing object files and HEAD/branch references. |
 
 ## Repository Structure
 

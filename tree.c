@@ -9,6 +9,9 @@
 #include <dirent.h>
 #include <sys/stat.h>
 
+// Forward declaration
+int object_write(ObjectType type, const void *data, size_t len, ObjectID *id_out);
+
 #define MODE_FILE      0100644
 #define MODE_EXEC      0100755
 #define MODE_DIR       0040000
@@ -89,14 +92,6 @@ int tree_serialize(const Tree *tree, void **data_out, size_t *len_out) {
 
 // ─── IMPLEMENTED ─────────────────────────────────────────────────────────────
 
-static int write_tree_level(IndexEntry *entries, int count, int depth, ObjectID *id_out);
-
-int tree_from_index(ObjectID *id_out) __attribute__((weak));
-int tree_from_index(ObjectID *id_out) {
-    (void)id_out;
-    return -1;
-}
-
 static int write_tree_level(IndexEntry *entries, int count, int depth, ObjectID *id_out) {
     Tree tree;
     tree.count = 0;
@@ -164,4 +159,12 @@ static int write_tree_level(IndexEntry *entries, int count, int depth, ObjectID 
     int ret = object_write(OBJ_TREE, data, len, id_out);
     free(data);
     return ret;
+}
+
+int tree_from_index(ObjectID *id_out) {
+    Index idx;
+    memset(&idx, 0, sizeof(idx));
+    if (index_load(&idx) != 0) return -1;
+    if (idx.count == 0) return -1;
+    return write_tree_level(idx.entries, idx.count, 0, id_out);
 }

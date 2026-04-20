@@ -56,16 +56,16 @@ The following screenshots are available in the Screenshots directory and mapped 
 
 | Screenshot Path | Description |
 | --- | --- |
-| Screenshots/Phase1_ObjectStorage_TestOutput.png.png | Phase 1 object storage test output showing successful blob write/read and integrity checks. |
-| Screenshots/Phase2_Tree_TestOutput.png.png | Phase 2 tree test output verifying tree serialization and parsing correctness. |
-| Screenshots/Phase2_ObjectBinary_View.png.png | Hex dump view of a stored tree object demonstrating raw object layout. |
-| Screenshots/Phase3_Index_Status_and_File.png.png | Phase 3 staging demonstration showing init, add, status, and index file contents. |
-| Screenshots/Phase4_Commit_Log.png.png | Commit log output showing commit metadata and history traversal. |
-| Screenshots/Phase4_ObjectGrowth_and_Refs.png.png | Object store growth and reference files after multiple commits. |
-| Screenshots/Integration_Test_Start.png.png | Integration test setup/start state before sequence execution. |
-| Screenshots/Integration_FirstCommit.png.png | Integration sequence output at first successful commit checkpoint. |
-| Screenshots/Integration_FullHistory.png.png | Integration sequence output demonstrating complete commit history flow. |
-| Screenshots/Integration_ObjectStore_and_Refs.png.png | Final integration state showing object files and HEAD/branch references. |
+| Screenshots/Phase1_ObjectStorage_TestOutput.png | Phase 1 object storage test output showing successful blob write/read and integrity checks. |
+| Screenshots/Phase2_Tree_TestOutput.png | Phase 2 tree test output verifying tree serialization and parsing correctness. |
+| Screenshots/Phase2_ObjectBinary_View.png | Hex dump view of a stored tree object demonstrating raw object layout. |
+| Screenshots/Phase3_Index_Status_and_File.png | Phase 3 staging demonstration showing init, add, status, and index file contents. |
+| Screenshots/Phase4_Commit_Log.png | Commit log output showing commit metadata and history traversal. |
+| Screenshots/Phase4_ObjectGrowth_and_Refs.png | Object store growth and reference files after multiple commits. |
+| Screenshots/Integration_Test_Start.png | Integration test setup/start state before sequence execution. |
+| Screenshots/Integration_FirstCommit.png | Integration sequence output at first successful commit checkpoint. |
+| Screenshots/Integration_FullHistory.png | Integration sequence output demonstrating complete commit history flow. |
+| Screenshots/Integration_ObjectStore_and_Refs.png | Final integration state showing object files and HEAD/branch references. |
 
 ## Repository Structure
 
